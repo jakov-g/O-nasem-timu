@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doktori - Naš tim</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #1e1e22;
+            color: white;
+            line-height: 1.6;
+        }
+
+        header {
+            text-align: center;
+            padding: 60px 20px 40px;
+            background-color: #29292e;
+        }
+
+            header h1 {
+                font-size: 48px;
+                color: #ffffff;
+                margin-bottom: 15px;
+            }
+
+            header p {
+                max-width: 700px;
+                margin: auto;
+                color: #cccccc;
+                font-size: 18px;
+            }
+
+        .team {
+            max-width: 1100px;
+            margin: 50px auto;
+            padding: 0 20px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+        }
+
+        .member {
+            background-color: #29292e;
+            border-radius: 15px;
+            padding: 25px;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+        }
+
+            .member img {
+                width: 220px;
+                height: 320px;
+                object-fit: contain;
+                margin-bottom: 15px;
+            }
+
+            .member h2 {
+                font-size: 25px;
+                margin-bottom: 8px;
+            }
+
+            .member .role {
+                color: #58a6ff;
+                font-weight: bold;
+                margin-bottom: 15px;
+            }
+
+            .member p {
+                color: #cccccc;
+            }
+
+        footer {
+            background-color: #151518;
+            text-align: center;
+            padding: 35px 20px;
+            margin-top: 30px;
+        }
+
+            footer h2 {
+                margin-bottom: 15px;
+            }
+
+            footer a {
+                display: block;
+                color: #58a6ff;
+                text-decoration: none;
+                margin: 5px;
+            }
+
+                footer a:hover {
+                    text-decoration: underline;
+                }
+
+        @media (max-width: 800px) {
+            .team {
+                grid-template-columns: 1fr;
+                max-width: 500px;
+            }
+
+            header h1 {
+                font-size: 38px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Doktori</h1>
+        <p>
+            Bavimo se programiranjem i dizajnom mrežnih stranica.
+            Složan smo tim sa uèinkovitim naèinom rada.
+        </p>
+    </header>
+
+    <main class="team">
+
+        <div class="member">
+            <img src="jakov.png" alt="Jakov">
+            <h2>Jakov</h2>
+            <div class="role">Voditelj i backend/programer</div>
+            <p>
+                Zadužen za voðenje tima, programiranje i razvoj
+                pozadinskog dijela web stranica.
+            </p>
+        </div>
+
+        <div class="member">
+            <img src="lovro.png" alt="Lovro">
+            <h2>Lovro</h2>
+            <div class="role">Frontend / dizajner</div>
+            <p>
+                Brine o izgledu stranice, korisnièkom suèelju
+                i frontend dijelu projekta.
+            </p>
+        </div>
+
+        <div class="member">
+            <img src="vito.png" alt="Vito">
+            <h2>Vito</h2>
+            <div class="role">Dokumentator / prezenter</div>
+            <p>
+                Zadužen za dokumentaciju projekta i predstavljanje
+                rada našeg tima.
+            </p>
+        </div>
+
+    </main>
+
+    <footer>
+        <h2>Kontakt</h2>
+
+        <a href="mailto:jakov.g0402@gmail.com">
+            jakov.g0402@gmail.com
+        </a>
+
+        <a href="mailto:bunjan.lovro@gmail.com">
+            bunjan.lovro@gmail.com
+        </a>
+
+        <a href="mailto:vitodumbovic@gmail.com">
+            vitodumbovic@gmail.com
+        </a>
+    </footer>
+
+</body>
+</html>
